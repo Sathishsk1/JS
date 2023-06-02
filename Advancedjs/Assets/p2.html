@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: rgb(125, 3, 240);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CLOSURE FUNCTION</h1>
+        <P>Closure function (skill confused concept) : closure means that an inner function always to access to the vars and parameters of its outer function</P>
+        </center>
+        <hr>
+        <h2>Example-1</h2>
+        <script>
+            function OuterFunction(){
+                let outervariables = 100;
+                
+                function InnerFunction(){
+                document.write("<b> InnerFunction : </b>" + outervariables + "<br><br>");
+
+            }
+            InnerFunction();
+        }
+        OuterFunction();
+
+        
+        </script>
+        <h2> Example-2</h2>
+        <script>
+            function counter1(){
+                let counter = 0;
+
+                function IncreaseCounter(){
+                    return counter +=1;
+                
+                }
+                return IncreaseCounter;
+            }
+             let count = counter1();
+             document.write("<b> this is counter function :</b>" + count()+"<br><br>");
+             document.write("<b> this is counter function :</b>" + count()+"<br><br>");
+             document.write("<b> this is counter function :</b>" + count()+"<br><br>");
+             document.write("<b> this is counter function :</b>" + count()+"<br><br>");
+             
+        </script>
+        <h2>Example-3</h2>
+        <script>
+            function counter2(){
+                let counter = 0;
+
+                setTimeout(function(){
+                    counter+=1;
+                    document.write("<b> this is first settimeout() Method :</b>" + counter + "<br><br>");
+                    
+                    let InnerCounter = 0;
+                    setTimeout(function(){
+                        InnerCounter += 1;
+                        document.write("<b> this is second settimeout() Method :</b>" + counter + "<br><br>");
+
+                    }, 1000);
+                }, 2000);
+            }
+        </script>
+        <hr>
+        <h2>Example-4</h2>
+        
+            <p> <b>Default function :</b> function A(){} A();</p>
+            <p> <b> Expression function : </b> let B = function(){};</p>
+            <p> <b> Arrow function : </b> let c => {}; c(); </p>
+            <p><>Annonymous Function :</b> (function(){})();</p>
+       
+            <script>
+                (function(){
+                    let i =10;
+                    document.write("<b> example 4 :</b>"+ 1 + "<br><br>");
+
+
+                })();
+                (function(firstname, lastname)
+                {
+                    document.write("<b> example 4 :</b>" +firstname +" "+lastname +"<br><br>");
+
+                })
+                ("sathish" ,"kumar");
+            </script>
+
+    
+</body>
+</html>

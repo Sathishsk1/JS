@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>objects</h1>
+    </center>
+    <script>
+        let user = {
+            "name":"rajesh",
+            "age" :24,
+            "isAdmin": true,
+            "hobbies" : ["trekking", "cycling", "cooking"],
+            "sayHI": (na) =>{
+                return "welcome to javascript" + na;
+
+            },
+            "display" : [
+                {
+                    "babn": "SBI",
+                    "accno": 12324
+                },
+                {
+                    "bank": "ICICI",
+                    "accno": 354564
+                
+                }
+            ]
+        };
+            console.log(user);
+            console.log(user.name);
+            document.write(`<h3> Name is ${ user.name}. welcome to bepractical </h3>`)
+           
+            document.write('<h3> age is '+ user.age +'</h3>');
+            document.write(`<h3> isAdmin is ${ user["isAdmin"] } </h3>`);
+           
+           document.write(`<h3>  ${ user.sayHi() } </h3>`);
+           document.write(`<h3>  ${ user.display ("Manoj") } </h3>`); 
+           document.write(`<h3>  ${ user.display (user.name) } </h3>`);
+    </script>
+    <script>
+        let user1 ={};
+        console.log("BEFORE",user1);
+
+        object.defineproperty(user1, "firstname",{value:"vamsi", writable:true});
+        console.log("AFTER", user1);
+        user1.firstname = "vijay kumar";
+        console.log("UPDATE",user1);
+
+    </script>
+    <h3>object,freeze()</h3>
+    <script>
+        let user2 = {
+            "name":"kiran"
+        };
+        
+        console.log("USER2  OBJECT");
+        console.log("BEFORE", user2);
+
+        user2.name = "Ramesh kumar";
+        console.log("AFTER",user2);
+
+        Object.freeze(user2);
+
+        user2.name = "Manikanth";
+        console.log("AFTER FREEZE", user2);
+
+
+    </script>
+</body>
+</html>

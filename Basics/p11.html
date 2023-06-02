@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>function</h1>
+    </center>
+    <pre>
+        1.Default function (no parameters , noreturns)
+        2,without parameters, with return value
+        3,with parameters, without return value
+        4,with parameters, with return value
+ </pre>
+ <hr>
+ <h1 onclick="defaultfunction()">Default function (no parameters , noreturns)</h1>
+ <script>
+    function defaultfunction() // function declaration
+    {
+        document.write("this is default function..!");
+    }
+
+ </script>\
+
+ <h1>without parameters, with return value</h1>
+
+ <script>
+    function addFunction(){
+        let firstnumber=10, secondNumber = 20, sum;
+        sum = firstnumber + secondNumber;
+       
+            return sum;
+            document.write('<p><b>SUM<b> : ${sum}<p>');
+
+        
+
+    }
+    document.write('<strong>without parameters, with return value : $ {addfunction()}</strong>');
+ 
+</script>
+
+<h1>with parameters, without return value</h1>
+<script>
+function studetails(firstname, lastname){
+    document.write('<p>firstparameter value is :${firstname}</p>');
+        document.write('<p>lastparameter value is :${lastname}</p>');
+
+            let fn, In, fullnamee;
+
+            fn = firstname;
+            In = lastname;
+            document.write('<p>first variable value is :${fn}</p>');
+                document.write('<p>last variable value is :${In}</p>');
+
+                    fullname = fn + " " +In;
+                    document.write('<p> the full varibale name value is :${fullname}</p>');
+}
+        
+
+</script>
+</script>
+
+<h1>with parameters, with return value</h1>
+<script>
+function studetails(firstname, lastname){
+    document.write('<p>firstparameter value is :${firstname}</p>');
+        document.write('<p>lastparameter value is :${lastname}</p>');
+
+            let fn, In, fullnamee;
+
+            fn = firstname;
+            In = lastname;
+            document.write('<p>first variable value is :${fn}</p>');
+                document.write('<p>last variable value is :${In}</p>');
+
+                    fullname = fn + " " +In;
+                    document.write('<p> the full varibale name value is :${fullname}</p>');
+}
+document.write('studetails ("sathish" , "kumar"');
+        
+
+</script>
+
+<h1>ECMA SCRIPT CODE</h1>
+<script>
+    document.write("<h1>Function defining..!</h1>");
+    function sum(a,b){
+        return a+b;
+
+    }
+    document.write('<h3> sum = ${ sum(33,44)} </h3>');
+    document.write("<h1>Function expression..!</h1>");
+    let fullname = function(firstname, lastname){
+        return firstname +" " + lastname;
+    };
+    document.write('<h3> fullname = ${fullname("HTML", "css")} </h3>');
+    
+    document.write("<h1>Arrow function..!</h1>");
+    let js = () => {
+        document.write("this is arrow function,,!");
+
+    }
+    js();
+    let rem = (a,b) =>{
+        return a%b;
+        document.write('<h3> rem =${rem(33,4)} </h3>');
+    }
+
+
+</script>
+
+<h1>CALL BACK FUNCTION..!</h1>
+<script>
+    function howareyou(qustion, yes, no){
+        if (confirm(question)){
+            yes();
+
+        }else {
+            no();
+        }
+    }
+    howareyou("hoe is your health?", function(){document.write(good);},
+    function() {document.write("bad");});
+    
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

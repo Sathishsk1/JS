@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <center><h1>JAVASCRIPT OBJECTS</h1></center>
+
+    <pre>
+        1.By Object literal
+        2.By craeting instance of object directly (using new keyword)
+        3.By using an object constructor(using new keyword)
+    </pre>
+    <hr>
+    <center><h3>By object Literals</h3></center>
+    
+    <p><strong>SYNTAX:</strong></p>
+    <pre>
+        let litteralObjectName = {
+            "property1" : "value1",
+            "property2" : "value2",
+            "property3" : "value3",
+            "propertyN" : "valueN",
+        };
+        console.log(literalObjectName);
+        console.log(typeOf(literalObjectName));
+        console.log(literalObjectName.property);
+    </pre>
+
+    <script>
+        let employeeDetails = {
+            "id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "firstName": ["sanjay", "sathish", "akhil", "kannan", "madhu", "soniya", "saniya", "roopa", "sathya",
+                "ruchitha"
+            ],
+            "lastName": ["kumar", "kumar", "loard", "vijay", "ajith", "firdoes", "troy", "anu", "susi",
+                "reddy"
+            ],
+            "fullName": function (first, last) {
+                return first + " " + last;
+            },
+            "mobile": [
+                [6383956163, 9786358654],
+                [9798455624, 8398238822],
+                [7888810533, 9874736767],
+                [8758836710, 7140583918],
+                [7784631014, 8667676488],
+                [9606729320, 7022101531],
+                [9839928152, 9398238822],
+                [9635656533, 8376736767],
+                [7376736767, 7809447014],
+                [9986840874, 8787788488]
+            ],
+            "pincode": [
+                [710173],
+                [938073],
+                [903983],
+                [980787],
+                [980353],
+                [837603],
+                [890373],
+                [603983],
+                [780787],
+                [987053]
+            ],
+            "address": {
+                "local": ["andhra", "thamilunadu", "rajasathan", "kaniiyakumarai", "andhra", "kerala", "thelangana",
+                    "delhi", "mumbai", "kerla"
+                ],
+                "permanent": ["tirupattur", "chennai", "andhra", "asam", "delhi", "mumbai", "hydrabad",
+                    "coimbathur", "thiruvannamalai", "bangalore"
+                ]
+            },
+            "photo": [
+                "https://www.shutterstock.com/image-photo/portrait-successful-young-man-smiling-260nw-1859229205.jpg",
+
+                "https://www.shutterstock.com/image-photo/portrait-successful-young-man-smiling-260nw-1859229205.jpg",
+
+                "https://www.smbceo.com/wp-content/uploads/2011/03/biz-owner.jpg",
+
+                "https://media.istockphoto.com/id/1090878254/photo/modern-businessman-in-deep-blue-shirt-standing-with-crossed-arms-isolated-on-gray-background.jpg?s=612x612&w=is&k=20&c=ZPbQi8stSuFxpWyC1JMcINzy5PiYghHJMZzL__assT0=",
+
+                "https://www.shutterstock.com/image-photo/smiling-handsome-vivacious-happy-young-260nw-320660534.jpg",
+
+                "https://www.shutterstock.com/image-photo/businessman-colleagues-background-260nw-172102733.jpg",
+
+                "https://www.shutterstock.com/image-photo/confident-attractive-young-businessman-standing-260nw-409747723.jpg",
+
+                "https://www.shutterstock.com/image-photo/successful-young-businessman-blue-suit-260nw-626421206.jpg",
+
+                "https://www.shutterstock.com/image-photo/smiling-handsome-vivacious-happy-young-260nw-320660534.jpg",
+
+                "https://www.shutterstock.com/image-photo/portrait-successful-young-man-smiling-260nw-1859229205.jpg"
+            ],
+        }
+    </script>
+    <script>
+        document.write("<center><h2>DataBase</h2></center>")
+        document.write(`<table cellspacing="0" cellpadding="4" border="1">`);
+        document.write("<tr>");
+        document.write("<th> id</th>");
+        document.write("<th> Type</th>");
+        document.write("<th> First name</th>");
+        document.write("<th>last name </th>");
+        document.write("<th>full name </th>");
+        document.write("<th>mobile number </th>");
+        document.write("<th>alt mobile number </th>");
+        document.write("<th> pincode</th>");
+        document.write("<th>local address </th>");
+        document.write("<th>permanent address </th>");
+        document.write("<th> emp photo</th>");
+        document.write("<th>options </th>");
+        document.write("</tr>");
+        document.write("<tr>");
+        for (let i = 0; i < employeeDetails.id.length; i++) {
+            document.write("<td>" + employeeDetails.id[i] + "</td>");
+            
+            document.write("<td>" + typeof employeeDetails + "</td>");
+            document.write("<td>" + employeeDetails.firstName[i] + "</td>");
+            document.write("<td>" + employeeDetails.lastName[i] + "</td>");
+            document.write("<td>" + employeeDetails.fullName(employeeDetails.firstName[i], employeeDetails.lastName[i]) + "</td>");
+            document.write("<td>" + employeeDetails.mobile[i][0] + "</td>");
+            document.write("<td>" + employeeDetails.mobile[i][1] + "</td>");
+            document.write("<td>" + employeeDetails.pincode[i] + "</td>");
+            document.write("<td>" + employeeDetails.address.local[i] + "</td>");
+            document.write("<td>" + employeeDetails.address.permanent[i] + "</td>");
+            document.write("<td>" + "<img width='100' height='100' src=" + employeeDetails.photo[i] + ">" + "</td>");
+            document.write("<td> <butt1on>EDIT</butt1on></td>");
+            document.write("</tr>");
+        }
+        document.write("</table>")
+    </script>
+        
+</body>
+</html>

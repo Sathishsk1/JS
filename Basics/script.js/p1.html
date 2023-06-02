@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let empdeatils = {
+            "firstname" : "sathish",
+            "lastname" :"sanjay",
+            "fullname" :function(){
+                return this.firstname + " " + this.lastname;
+            },
+            "mobile":[9789628147, 6383956163],
+            "pincosde": 636263,
+            "address": {"local":"banglore", "per":"mathigere"},
+            "photo":"assetd"
+            };
+            
+    </script>
+    
+    <script>
+        document.write("<table border='1' cellpadding= '10'>");
+            document.write("<tr>");
+                document.write("<th>EMP ID</th>");
+                document.write("<th>First name</th>");
+                document.write("<th> lastname</th>");
+                document.write("<th>fullname</th>");
+                document.write("<th> mobile number</th>");
+                document.write("<th> alt mobile number</th>");
+                document.write("<th> local address</th>");
+                document.write("<th>per address </th>");
+                document.write("<th> pincode</th>");
+                document.write("<th>  emp photo</th>");
+                document.write("<th> OPTIONS</th>");
+ document.write("</tr>");
+document.write("<tr>");
+    document.write("<td>"+ empdeatils.id +"</td>");
+    document.write("<td>"+ empdeatils.firstname +"</td>");
+    document.write("<td>"+ empdeatils.lastname +"</td>");
+    document.write("<td>"+ empdeatils.fullname +"</td>");
+    document.write("<td>"+ empdeatils.mobile[0]+"</td>");
+    document.write("<td>"+ empdeatils.mobile[1]+"</td>");
+    document.write("<td>"+ empdeatils.address.local+"</td>");
+    document.write("<td>"+ empdeatils.address.per+"</td>");
+    document.write("<td>"+ empdeatils.pincosde+"</td>");
+    document.write("<td>"+ "<img height= '100' width='100' src="+empdeatils.photo +">" +"</td>");
+    document.write("<td><button type= 'button'>edit</button> | <button type= 'button'>delete</button></td>");
+        document.write("<tr>");
+            document.write("</table>");
+ </script>
+</body>
+</html>

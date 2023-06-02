@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>DOM</h1>
+    </center>
+    <hr>
+    <h2 id="head"></h2>
+    <input type="text" name="name" id="name" placeholder="Name">
+
+    <script>
+        let textBox = document.getElementById("name");
+        textBox.style.height="35px";
+        textBox.style.width="100px";
+        textBox.style.borderRadius="10px"
+        textBox.style.fontSize="1.2em";
+        textBox.style.color="green";
+
+        console.log(textBox.getAttribute("id"));
+        console.log(textBox.getAttribute("style"));
+
+        textBox.setAttribute("name","setname");
+        console.log(textBox.getAttribute("name"));
+
+        
+        function addElement(){
+            let p = document.createTextNode("lorem Generate Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools");
+   
+        console.log(data);
+
+        p.appendChild(data);
+        console.log(p);
+
+        document.body.appendChild(P);
+    }
+    addElement();
+
+    </script>
+</body>
+</html>

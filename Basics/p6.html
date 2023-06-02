@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BASICS</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+   
+
+</style>
+<body>
+    <center>
+        <h1>Switch case..!</h1>
+    </center>
+    <hr>
+    <div class="card">
+    <table>
+        <tr>
+            <td><labrl for="">Enter Number in between 1-7 :</labrl></td>
+            <td><input type="number" id= "number" name="number" placeholder="Number between 1-8"</td>
+            <td><button type="button" id="btn">Result</button></td>
+        </tr>
+    </table>
+</div>
+
+    <script>
+function switchCase(){
+    let  number = +document.getElementById("number").value;
+    switch (number){
+    case 1: alert("today is sunday..!");
+    break;
+    case 2: alert("today is monday..!");
+    break;
+    case 3: alert("today is tuesday..!");
+    break;
+    case 4: alert("today is wednesday..!");
+    break;
+    case 5: alert("today is thusday..!");
+    break;
+    case 6: alert("today is friday..!");
+    break
+    case 7: alert("today is saturday..!");
+    break;
+    default: alert("today is no information for the day..!");
+    break;
+}
+
+}
+document.getElementById("btn").onclick = switchCase;
+
+    </script>
+    
+</body>
+</html>

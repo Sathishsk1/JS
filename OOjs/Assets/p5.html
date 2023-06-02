@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>NUMBER</h1>
+    </center>
+    
+    <script>
+        let a = 2;
+        let b = 3.142;
+        let c = 0xff;
+        let d = 1.57e4;
+        let e = new Number();
+        let f = new Number(16)
+        
+        let x = 10;
+        let y = 20;
+        let z = "30";
+        console.log(x+y);
+        console.log(z+z);
+        console.log(z+x);
+        console.log(x+z);
+    </script>
+    <pre>
+        1.isfinite(); // returns boolean value
+        2.isinteger(); // check integer or not
+        3.parseflot();
+        4.parseint();
+        5.toexponential();
+        6.tofixed();
+    </pre>
+    <script>
+        document.write("Number.infinte(infinte)" + Number.isfinite(infinity) + "<br>");
+        document.write("Number.infinte(infinte)" + Number.isfinite(3.143) + "<br>");
+
+        function divide(m,n){
+            return m/n;
+}
+        document.write("Number.infinte(divide(0,10)) :" + Number.isfinite(divide(0,10)) + "<br>");
+        document.write("Number.infinte(divide(10,0)) :" + Number.isfinite(divide(10,0)) + "<br>");
+
+        let s1 = "3.14";
+        console.log(typeof s1);
+        let s1Result = parsefloat(s1);
+        console.log("parsefloat :" + s1Result);
+        console.log(typeof s1Result);
+
+        console.log("parsefloat :" + parsefloat("50.55px"));
+
+        let p = 67.1234;
+        let p1 = 6789.1234;
+        console.log("toExpontential :" + p.toexponential());
+        console.log("toExpontential :" + p1.toexponential());
+       
+        let p = 72.035;
+        console.log("tofixed :" + q.tofixed());
+        console.log("tofixed :" + q.tofixed(2));
+        console.log("tofixed :" + q.tofixed(1));
+        console.log((12).tostring());
+        console.log((15.6).tostring());
+
+    </script>
+
+        
+
+</body>
+</html>

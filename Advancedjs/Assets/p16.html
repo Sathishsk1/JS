@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>strict mode</h1>
+        <p> strict mode if you initalize a variable with declaring it using the var keyword</p>
+    </center>
+    <hr>
+
+    <script>
+        "use strict";
+
+        sayHello();
+        function sayHello(){
+            "use strict";
+            let str = "Hello World..!";
+            document.write(str, "<br>");
+        }
+
+        function dosomething(){
+            msg ="hi, there!";
+            return msg;
+        }
+        console.log(dosomething());
+    </script>
+</body>
+</html>

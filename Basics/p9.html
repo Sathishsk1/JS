@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .card{
+        height:250px;
+        width: 250px;
+        padding: 10px;
+        background-color: rgb(111, 10, 235);
+        border-radius: 20px;
+        margin-bottom: 100px;
+      }
+
+    button{
+        margin-top: 40px;
+        background-color: rgb(67, 67, 255);
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+    }
+    input{
+        width: 100%;
+        margin-top: 30px
+    }
+
+</style>
+<body>
+    <center>
+        <h1>Looping Statement..1</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>while loop</li>
+        <li>do while loop</li>
+        <li>for loop</li>
+
+    </ol>
+    <hr>
+    <div class="card">
+    <h2>for loop example..!</h2>
+    <i> <input type="number" id="firstnumber" name=""></i>
+    <button onclick="forLoop()">for Loop</button>
+</div>
+<script>
+        function forLoop(){
+        let fnumber = +document.getElementById("firstnumber").value;
+        for(let i = 0; i <=1; i++){
+            document.write(i,"<br><hr>");
+            
+        }
+      
+}
+</script>
+    
+</body>
+</html>

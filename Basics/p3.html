@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>JAVASCRIPT GENERATING OUTPUT..!</h1>
+    </center>
+    <hr>
+    <p id="res">RESULT :</p>
+    <script>
+        let firstNumber = 30, lastnumber = 20, sum;
+
+        sum = firstNumber + lastnumber; //sum 10 +20
+
+         document.write('<p><b>document.write : ${sum}</b></p>');
+         document.writeln('<p><b>document.writeln : ${sum}</b></p>');
+         console.log('console.log =>', sum);
+
+         alert("alert : " + sum);
+         confirm("confirm :" +sum);
+         prompt("prompt :" + sum);
+
+         document.getElementById("res").innerHTML += sum;
+        
+         
+    </script>
+</body>
+</html>

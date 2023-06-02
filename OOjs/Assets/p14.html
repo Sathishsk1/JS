@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        class constructor (function constructor)
+    </h3>
+    <script>
+        function car(){
+            this.model = 2022;
+            this.color = "blue";
+            //local var
+            let mileage = 20;
+            document.write(`<h3> mileage = ${mileage} </h3>`);
+            //car();
+            let x =new  Car();
+            console.log('x = ' ,x);
+            document.write(`<h3> Model = ${ x.model} </h3>`);
+            document.write(`<h3> color = ${ x.color} </h3>`);
+        }
+    </script>
+</body>
+</html>

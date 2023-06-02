@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>constructor</h1>
+    </center>
+    <hr>
+    <script>
+        let kiran = 100;
+
+        function WhoisThis(){
+            let kiran = 200;
+            let goKul = 500;
+            window.laxmi = 300;
+
+            alert("local varibale :" + kiran);
+            alert("local varibale :" + gokul);
+            alert("global varibale :" + this.kiran);
+            alert("global varibale :" + laxmi);
+        }
+        WhoisThis();
+        function WhoamI(){
+            document.write("This is Whoam function : "+laxmi);
+        }
+        WhoamI();
+    </script>
+</body>
+</html>

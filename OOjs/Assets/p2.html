@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>By creating instance of object directly (using new keyword)</h1>
+
+    </center>
+    <hr>
+       <strong>STYNTAX :
+       </strong>
+       <PRE>
+         Let object name = new constructormethod(); </PRE>
+         
+         <script>
+            document.write();
+            let empdetails =new object();
+             console.log(typeof empdetails + "<br>");
+
+             empdetails.firstname = "shree";
+             empdetails.lastname = "kannan";
+             empdetails.fullname= function(){return this.firstname + " " + this.lastname}
+
+             document.write(empdetails.firstname+"<br>");
+             document.write(empdetails.lastname+"<br>");
+             document.write(empdetails.fullname()+"<br>");
+
+         </script>
+         <hr>
+         <center>
+            <h1>by using an object constructor(using new keyword)</h1>
+         </center>
+         <script>
+            function studentinfo(firstname, lastname){
+                document.write(`<h3> first parameter value is : ${firstname}</h3>`);
+                document.write(`<h3> second parameter value is : ${firstname}</h3>`);
+
+                let fn, ln;
+                fn = firstname;
+                ln = lastname;
+
+                document.write(`<h3> first variable  value is : ${fn}</h3>`);
+                document.write(`<h3> first variable  value is : ${ln}</h3>`);
+              
+                let fname, lname;
+
+                this.fname = firstname;
+                this,lname = lastname;
+
+                document.write = new studentinfo("HTML", "HTML-5");
+                console.log("STUD: ", typeof stud)
+                console.log("STUD: ", stud);
+                document.write(`<h3> first variable  value is : ${stud.fname}</h3>`);
+                document.write(`<h3> first variable  value is : ${stud.lname}</h3>`);
+
+
+            }
+         </script>
+
+    
+</body>
+</html>
